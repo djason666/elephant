@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .wrap{
+            margin:0 auto;
+            width:100px;
+            height:100px;
+            background-color:white;
+        }
+        .box1{
+            width:800;
+            background-color:rgba(0%, 0% 80%, 0.4)
+        }
+        .name{
+            display:inline-block;
+        }
+        .slogan{
+            display:inline-block;
+            text-aligh:right;
+        }
+        .sticker{
+            width: 200px;
+            margin: 22px;
+            clip-path: circle();
+        }
+        .matrix{
+            border:2px black solid;
+            position:absolute;
+            background-color:#80FFFFFF,30%;
+            float: left;
+            left:300px;
+            height:2000px;
+            width:600px;
+            
+        }
+        .progress{
+            width:500px;
+            height:35px;
+            border-radius:15px;  
+            overflow:hidden;
+            box-shadow:0 0  5px 0px #ddd inset;
+            left:100px;
+            
+        }
+        .pss{
+            display:inline-block;
+            width: 70%;
+            height:100%;
+            background-color:#6FB7B7;
+            background-size:60px 30px;
+            text-aligh:center;
+            color:#fff;
+        }
+        .ability{
+            
+        }
+        .section2{
+            
+        }
+        .aside{
+            float:left;
+            width: 250px;
+            height: 1000px;
+            border: 4px #005AB5 solid;
+            left:20px;
+            background-color: #6A99C8;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            position:fixed;
+            overflow-x:hidden;
+        }
+        .nnn{
+            line-height: 3px;
+        }
+        body{
+            margin:0;
+            background-image:url(jpg/IMG_0009.jpeg)  ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+
+        }
+        .amos{
+            width:100%;
+            height:200px;
+            background-color:#D0D0D0
+            margin:auto;	
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#474e5d;
+            font-family: Helvetica, sans-serif;
+        }
+        .timeline{
+            position:relative;
+            max-width:2000px;
+            margin:0 auto;
+            
+        }
+        .timeline::after{
+             content:'';
+             position: absolute;
+             width: 6px;
+             background-color: white;
+             top: 0;
+             bottom: 0;
+             left: 85%;
+             margin-left: -3px;
+        }
+        .container {
+             padding: 10px 40px;
+             position: relative;
+             background-color: inherit;
+             width: 50%
+        }
+        .container::after{
+             content: '';
+             position: absolute;
+             width: 25px;
+             height: 25px;
+             right: -300px;
+             background-color: white;
+             border: 4px solid #7D7DFF;
+             top: 15px;
+             border-radius: 50%;
+             z-index: 1;
+            
+        }
+        .left{
+            left:50%;
+        }
+        .left::before{
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .right::after{
+            left:-16px;
+        }
+        .content{
+            padding:15px 5px;
+            background-color:white;
+            position:relative;
+            border-radius:30px;
+            right:237px;
+        }
+        .timeline::after{
+            left:30px;
+        }
+        .container::before{
+            left:-200px;
+            border:medium solid white;
+            border-width:10px 10px 10px 0;
+            border-color:transparent white transparent transparent;
+        }
+        .left::after{
+            left:100px;
+        }
+        .right::after{
+            left:15px;
+        }
+        .right{
+            left:0%;
+        }
+        .interest{
+            background-color:white;
+            border-width:20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+    </style>
+    <link rel="photosticker" href="./IMG_8362.JPG">
+    <link rel="photosticker" href="./IMG_0009.jpeg">
+    <link rel="photosticker" href="./IMG_9088.jpeg">
+    
+</head>
+<body>
+    
+        <div class="matrix" alt="matrix">
+            <div class="box1">
+                 <h1 class="name">林育德</h1>
+                 <h2 class="slogan">要成為像龍一樣的人</h2></br>
+                 <h2 class="slogan">ドラゴンのような男になる</h2></br>
+                 
+                 <h2 id="section2">一、能力簡介</h2></br>
+                 <table>
+                     <tr>
+                         <td>C#</td>
+                         <td class="progress" width="200">70%</td>
+                     </tr>
+                     <tr>
+                        <td>JAVA</td>
+                        <td class="progress" width="200">80%</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td class="progress" width="200">85%</td>
+                    </tr>
+                    <tr>
+                        <td>JAVA SCRIPT</td>
+                        <td class="progress" width="200">80%</td>
+                    </tr>
+                 </table>
+                 <h2>二、興趣介紹</h2>
+                     <div class="interest">
+                         <p>平時的興趣基本上就是唱歌、打麻將、打電動等不誤正業的行為。</p>
+                     </div>
+                 <h2>三、個人經歷</h2>
+                     <div class="timeline">
+                         <div class="container left">
+                             <div class="content">
+                                 <h2>企業概論</h2>
+                                 <p>在大一上的企業概論課程中，我與我的團隊們在老師的帶領下，嘗試從頭開始一步一步地為一個商品打造出合適的廣告、
+                                     包裝、口號、銷售對策等能夠實際應用在社會中的實用技術。最後也在團隊的共同努力下，交出了一張令大家都滿意的成績單。</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>自然科學導論</h2>
+                            <p>在自然科學導論的課程中，我透過一個專案的機會首次接觸到了影片剪輯的製作，在剪輯的過程中也發覺自己對影片剪輯有相當的興趣。</p>
+                        </div>
+                    </div>
+            </div>   
+        </div>
+    <aside>
+        <div class="aside" >
+         <img src="./jpg/IMG_8362.JPG" class="sticker" alt="sticker">   
+        <ul>
+             <h3 class="nnn">中原大學資訊管理學系</h3></br>
+             <h3 class="nnn">生日：2000/10/25</h3></br>
+             <h3 class="nnn">電話：0902316672</h3></br>
+             <a herf="#section2"><h3>Programing Abilities</h3><a></br>
+             <a href="https://www.facebook.com/profile.php?id=100003261687586">
+                <img src="jpg/download.jpg" width="50" height:="50">
+             </a>
+             <a herf="https://www.instagram.com/jasonlin1025/">
+                <img src="jpg/instagram-1581266_1920.jpg" width="50" height="50">
+             </a>
+             <a herf="mailto:michael777.hsu13@gmail.com">
+                <img src="jpg/unnamed.jpg" width="50" height="50">
+             </a>
+         </ul>
+        </div>
+    </aside>
+   
+</body>
+</html>
